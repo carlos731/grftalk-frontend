@@ -11,7 +11,7 @@ import 'dayjs/locale/pt-br';
 /* Initializer socket.io */
 export const socket = io(process.env.NEXT_PUBLIC_API_BASE_URL as string)
 
-export const Provider = ({ children }: { children: React.ReactNode }) => {
+export const Providers = ({ children }: { children: React.ReactNode }) => {
     useEffect(() => {
         // Set locale to pt-br
         dayjs.locale('pt-br')
