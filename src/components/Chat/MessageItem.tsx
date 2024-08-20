@@ -55,7 +55,7 @@ export const MessageItem = ({ data, onDelete }: Props) => {
             {data.from_user.id == user?.id && 
                 <DropdownMenu>
                     <DropdownMenuTrigger>
-                        <EllipsisVertical className="size-5 text-slate-500 dark:text-slate-400 hover:text-primary cursor-pointer -mt-5" />"
+                        <EllipsisVertical className="size-5 text-slate-500 dark:text-slate-400 hover:text-primary cursor-pointer -mt-5" />
                     </DropdownMenuTrigger>
                     <DropdownMenuContent align="end">
                         <DropdownMenuItem className="cursor-pointer" onClick={() => onDelete(data.id)}>
