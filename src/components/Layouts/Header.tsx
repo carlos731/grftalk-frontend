@@ -97,10 +97,10 @@ export const Header = () => {
                                 >
                                     <Avatar className="size-7">
                                         <AvatarImage
-                                            src={user.avatar}
+                                            src={user.avatar === "http://127.0.0.1:8000/media/avatars/default-avatar.png" ? '' : user.avatar}
                                             alt={user.name}
                                         />
-                                        <AvatarFallback>{user.name.slice(0, 2)}</AvatarFallback>
+                                        <AvatarFallback className="text-slate-900 dark:text-slate-50">{user.name.slice(0, 2)}</AvatarFallback>
                                     </Avatar>
 
                                     <ChevronDown

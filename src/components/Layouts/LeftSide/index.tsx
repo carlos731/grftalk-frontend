@@ -81,7 +81,7 @@ export const LeftSide = ({ variant = "desktop" }: Props) => {
                         variant="outline"
                         onClick={handleFilterChats}
                     >
-                        <Search className="size-4" strokeWidth={3} />
+                        <Search className="size-4 text-stone-900 dark:text-slate-50" strokeWidth={3} />
                     </Button>
                 </div>
 

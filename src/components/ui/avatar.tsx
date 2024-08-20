@@ -13,6 +13,7 @@ const Avatar = React.forwardRef<
 >(({ className, isOnline = false, ...props }, ref) => (
   <div className="relative">
     {isOnline && <div className="absolute bg-emerald-400 z-10 rounded-full border-slate-300 size-3 bottom-0.5 right-0" />}
+    
     <AvatarPrimitive.Root
       ref={ref}
       className={cn(

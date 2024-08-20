@@ -74,7 +74,7 @@ export const NewChat = () => {
                             <Button type="submit">Iniciar conversa</Button>
                             
                             <DrawerClose asChild>
-                                <Button variant="outline">Cancelar</Button>
+                                <Button className="text-stone-700 dark:text-stone-50" variant="outline">Cancelar</Button>
                             </DrawerClose>
                         </DrawerFooter>
                     </form>
